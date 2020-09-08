@@ -3,6 +3,11 @@ package com.tom
 fun main(args: Array<String>) {
 //    println("Hello Kotlin")
 //    Human().Hello()
+    var s:String ? = "abcde" // ? -> allow to be null
+    //s = null ## Not allow to assign null,
+    println(s?.length)
+    println(s?.get(3))
+    println(s?.substring(3))
     val h = Human(weight = 66.5f,height = 1.7f)
     println(h.bmi())
     val score = 88
